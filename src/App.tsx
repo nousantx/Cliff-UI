@@ -5,6 +5,7 @@ import About from "./pages/About";
 import Home from "./pages/Home";
 import { Navbar } from "./components/Navbar";
 import { Footer } from "./components/Footer";
+import { NotFound } from "./pages/NotFound";
 
 const App: React.FC = () => {
   useStyles();
@@ -13,18 +14,11 @@ const App: React.FC = () => {
     <BrowserRouter>
       <Navbar />
       <Routes>
-        <Route
-          path="*"
-          element={
-            <section className="center bg-neutral-900">
-              <h1 className="text-danger-500">Not Found</h1>
-            </section>
-          }
-        />
+        <Route path="*" element={<NotFound />} />
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
       </Routes>
-      <Footer/>
+      <Footer />
     </BrowserRouter>
   );
 };
