@@ -2,6 +2,8 @@
 
 Landing page design using React + Vite + TenoxUI
 
+Last Lighthouse Test : [pagespeed](https://pagespeed.web.dev/analysis/https-react-tui-app-web-app/b8ho3tas0c?form_factor=desktop)
+
 ## What is TenoxUI???
 
 TenoxUI is a Utility First CSS Framework with **no css file**, all the styles and classes handled by javascript.
