@@ -22,6 +22,11 @@ export const config = {
     // classes
     ".nav-link":
       "fs-0.9em fw-300 tc-[neutral-800] back-c-transparent bc-[primary-500] bw-0 bs-solid bw-bottom-1px",
+    ".footer-links": {
+      "": " fx-400px d-flex fx-wrap-wrap ai-stretch gap-2rem",
+      a: "d-block text-[neutral-700] fs-14px mt-10px",
+    },
+
     // my re-usable classNames
     ".flex": "d-flex",
     ".flex-wrap": "d-flex fx-wrap-wrap",
