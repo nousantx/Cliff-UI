@@ -34,7 +34,7 @@ const App = () => {
 export default App;
 ```
 
-Tenoxui is working using DOM, so instead of using useEffect, it will loaded much and more faster using `useLayoutEffect`. (  Honestly, i dont even know this function at first, and use `useEffect` :/ But now, try it out on your react project :D )
+Tenoxui is working using DOM, so instead of using `useEffect`, it will loaded much and more faster using `useLayoutEffect`. (  Honestly, i dont even know this function at first, and use `useEffect` :/ But now, try it out on your react project :D )
 
 ## Dive deeper
 
