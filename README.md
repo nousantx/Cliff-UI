@@ -36,9 +36,9 @@ export default App;
 
 Tenoxui is working using DOM, so instead of using `useEffect`, it will loaded much and more faster using `useLayoutEffect`. (  Honestly, i dont even know this function at first, and use `useEffect` :/ But now, try it out on your react project :D )
 
-## Dive deeper
+## Functions
 
-TenoxUI has several methods and functions you can use.
+TenoxUI has several functions you can use to make your work easier.
 
 ### Adding types and properties
 
@@ -75,17 +75,15 @@ useLayoutEffect(() => {
 
 You can use array for property values, and it will set the value for all propties inside of the array. Code above, we defined type `size`, it will set value for both `width` and `height` at the same time, like `size-300px` it will make a square box with 300px size.
 
-Also, you can use our defined `types` and `properties` on [Docs](https://tenoxui.web.app/docs/extras/all-class) or [GitHub](https://github.com/tenoxui/css/blob/main/src/js/lib/property.js)
-
-3. Use defined type
-
-After defining new type and property, you can use it on your element.
+After that, you can use new defined type and property directly on your element.
 
 ```jsx
 <div className="size-200px bg-#f00">
   <h1 className="hehehe-blue">Blue Text</h1>
 </div>
 ```
+
+Also, you can use our defined `types` and `properties` on [Docs](https://tenoxui.web.app/docs/extras/all-class) or [GitHub](https://github.com/tenoxui/css/blob/main/src/js/lib/property.js)
 
 ### Make Styles
 
@@ -99,7 +97,9 @@ import tenoxui, { makeStyles } from "tenoxui";
 
 2. Defining styles
 
-Let's give some styles for body, card, and title class :
+`makeStyles` uses 2 parameters. First is `selector`, which element you want to give style. And `styles`, its value, that means this is what style you will add to the selector.
+
+Let's give some styles for body, card, and title class:
 
 ```js
 useLayoutEffect(() => {
@@ -116,9 +116,12 @@ useLayoutEffect(() => {
 
 Now, add new component :
 
-
 ```jsx
 <div className="card">
   <h1 className="title">Its title!</h1>
 </div>
 ```
+
+## Resource
+
+TenoxUI : [Docs](https://tenoxui.web.app/) | [GitHub](https://github.com/tenoxui/css)
