@@ -1,0 +1,107 @@
+:root {
+  /* Maybe needed value */
+  --tx_inline-block: inline-block;
+  --tx_sb: space-between;
+  --tx_fx-s: flex-start;
+  --tx_fx-r: flex-end;
+
+  /* colors */
+  /* Primary: Purplue */
+  --primary-100: #fcf2ff;
+  --primary-200: #e9bdfe;
+  --primary-300: #cb85f7;
+  --primary-400: #a14ce4;
+  --primary-500: #6c19bf;
+  --primary-600: #480899;
+  --primary-700: #2d0273;
+  --primary-800: #19004d;
+  --primary-900: #0a0026;
+
+  /* Info: Huelveño Horizon */
+  --info-100: #f2f8ff;
+  --info-200: #b9ddff;
+  --info-300: #7fc6fc;
+  --info-400: #45b3f5;
+  --info-500: #0ea3e8;
+  --info-600: #0589b8;
+  --info-700: #016c87;
+  --info-800: #004a57;
+  --info-900: #002326;
+
+  /* Danger: Redsurrection */
+  --danger-100: #fff2f2;
+  --danger-200: #feb8b8;
+  --danger-300: #fa7d7d;
+  --danger-400: #ee4141;
+  --danger-500: #d60b0e;
+  --danger-600: #aa0410;
+  --danger-700: #7e0112;
+  --danger-800: #520010;
+  --danger-900: #26000a;
+
+  /* Success: King Lizard */
+  --success-100: #f6fff2;
+  --success-200: #d6fec1;
+  --success-300: #bafb8f;
+  --success-400: #9ff05b;
+  --success-500: #85db2a;
+  --success-600: #6aae0e;
+  --success-700: #538103;
+  --success-800: #3a5400;
+  --success-900: #1d2600;
+
+  /* Primary: Apricot Glazed Chicken */
+  --warning-100: #fffef2;
+  --warning-200: #fff3be;
+  --warning-300: #fde288;
+  --warning-400: #f7c753;
+  --warning-500: #eda51f;
+  --warning-600: #bb730a;
+  --warning-700: #8a4a02;
+  --warning-800: #582a00;
+  --warning-900: #261000;
+
+  /* Accent: The Rainbow Fish */
+  --accent-100: #f2f2ff;
+  --accent-200: #c8ccff;
+  --accent-300: #9ca9fc;
+  --accent-400: #7089f5;
+  --accent-500: #436ce8;
+  --accent-600: #204fb8;
+  --accent-700: #103b87;
+  --accent-800: #082957;
+  --accent-900: #031426;
+
+  /* Neutral */
+  --neutral-100: #fcfbfa;
+  --neutral-200: #c1bfbf;
+  --neutral-300: #858484;
+  --neutral-400: #494948;
+  --neutral-500: #262222;
+  --neutral-600: #201d1d;
+  --neutral-700: #1a1818;
+  --neutral-800: #131313;
+  --neutral-900: #0d0d0d;
+
+  /* Primary: Gǎn Lǎn Huáng Olive */
+  --primary-100: #f9fff2;
+  --primary-200: #e4ffc1;
+  --primary-300: #d4ff90;
+  --primary-400: #cbff5f;
+  --primary-500: #c7ff2e;
+  --primary-600: #a2c90f;
+  --primary-700: #7d9303;
+  --primary-800: #545c00;
+  --primary-900: #252600;
+
+  /* Accent: Blue Blue */
+  --accent-100: #f2f2ff;
+  --accent-200: #bdc1fe;
+  --accent-300: #8592f8;
+  --accent-400: #4c67e8;
+  --accent-500: #1842c9;
+  --accent-600: #0835a1;
+  --accent-700: #022b78;
+  --accent-800: #00204f;
+  --accent-900: #001226;
+}
