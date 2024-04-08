@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { useStyles } from "../utils/styles";
+import useStyles from "../utils/useStyles";
 
 export const NotFound = () => {
   useStyles();

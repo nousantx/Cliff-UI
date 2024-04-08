@@ -1,5 +1,5 @@
 import Feature from "../components/Feature";
-import { useStyles } from "../utils/styles";
+import useStyles from "../utils/useStyles";
 
 const Home = () => {
   useStyles();
@@ -15,8 +15,8 @@ const Home = () => {
             <span className="text-primary-500">.</span>
           </h1>
           <p className="text-neutral-800 ta-justify mt-8px">
-            Our platform offers tools, inspiration, and community
-            support for your extended creative journey. Join us now!
+            Our platform offers tools, inspiration, and community support for
+            your extended creative journey. Join us now!
           </p>
         </header>
         <div className="mt-1.6rem center jc-start gap-8px">

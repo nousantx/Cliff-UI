@@ -1,5 +1,5 @@
 import { NavLink } from "react-router-dom";
-import { useStyles } from "../utils/styles";
+import useStyles from "../utils/useStyles";
 
 export const Navbar = () => {
   useStyles();
@@ -15,8 +15,8 @@ export const Navbar = () => {
         <NavLink to="/" className="nav-link">
           Overview
         </NavLink>
-        <NavLink to="/about" className="nav-link">
-          About
+        <NavLink to="/component" className="nav-link">
+          Component
         </NavLink>
       </div>
     </nav>

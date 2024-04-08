@@ -1,4 +1,4 @@
-import { useStyles } from "../utils/styles";
+import useStyles from "../utils/useStyles";
 
 const About = () => {
   useStyles();
