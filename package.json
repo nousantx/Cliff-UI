@@ -8,7 +8,8 @@
     "build": "tsc && vite build && cp robots.txt ./dist",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
-    "serve": "live-server ./dist"
+    "serve": "live-server ./dist",
+    "deploy": "yarn build && firebase deploy"
   },
   "dependencies": {
     "axios": "^1.6.8",
