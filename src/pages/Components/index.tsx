@@ -1,15 +1,36 @@
 import { Link } from "react-router-dom";
 import Article from "../../components/Article";
 import useStyles from "../../utils/useStyles";
+import { useEffect, useLayoutEffect, useState } from "react";
+import Styles from "../../utils/styles";
+import Color from "../../utils/color";
+import styleColor from "../../utils/styleColor";
+import Button from "./components/Button";
 
 const Components = () => {
+  const [isToggled, setIsToggled] = useState(false);
+
+  // useEffect(() => {
+  //   tenoxui(); // Apply styles from the CSS framework
+  // }, []);
+
+  const handleClick = () => {
+    setIsToggled(!isToggled);
+  };
+
   useStyles();
+
+  useLayoutEffect(() => {
+    Styles();
+    styleColor();
+  }, [isToggled]);
+
   return (
     <>
       <section className="pt-7rem">
         <div className="center w-full mb-5rem">
-          <header className="">
-            <div className="center jc-start gap-8px">
+          <header className="ta-center">
+            <div className="center gap-8px">
               <span className="ms-round fs-2.7rem text-primary-500">
                 space_dashboard
               </span>
@@ -25,9 +46,31 @@ const Components = () => {
             </p>
           </header>
         </div>
+
+        <Article title="Checkbox" desc="Handle checkbox" isNew>
+          <div className="flex fd-col ai-start gap-8px">
+            <Button text="Hello World" />
+            <Button
+              checkBoxBackground="primary-500"
+              checkColor="neutral-100"
+              text="Is tenoxui cooked?"
+            />
+          </div>
+        </Article>
         <Article title="Button" desc="Button component to use">
           <div className="flex fd-col gap-2rem">
             <div className="flex-wrap center gap-1rem">
+              <button
+                className={`btn center bs-solid bw-1px tr-prop-background tr-time-0.3s tr-timing-ease ${
+                  isToggled
+                    ? "bg-primary-500 text-neutral-100"
+                    : "bg-none bc-[primary-500] text-primary-500"
+                }`} // Assuming Tailwind CSS class names
+                onClick={handleClick}
+              >
+                {/* {isToggled ? "Toggled" : "Click to Toggle"} */}
+                <span className="ms-round fs-14px">add</span>
+              </button>
               <div className="btn bw-1px bs-solid bc-[neutral-600]">Button</div>
               <div className="btn bw-1px bs-solid bc-[neutral-600] center p-8px">
                 <span className="ms-round fs-14px">add</span>
@@ -102,9 +145,9 @@ const Components = () => {
           </div>
         </Article>
         <Article title="Card" desc="Its components" isNew>
-          <div className="center fd-col gap-2rem">
-            <div className="flex ai-stretch w-full br-8px over-hidden">
-              <div className="center w-full bg-neutral-300">
+          <div className="center fd-col gap-2rem w-full">
+            <div className="w-full w-mx-500px flex ai-stretch br-8px over-hidden">
+              <div className="center w-full bg-neutral-300 ">
                 <span className="text-primary-500 ms-round fs-2rem">
                   developer_guide
                 </span>
