@@ -4,7 +4,7 @@ import App from "./App.tsx";
 import "./css/index.css";
 import "./css/root.css";
 import "./css/google-icons.css";
-
+import "./css/tenox-icons.css";
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
     <App />
