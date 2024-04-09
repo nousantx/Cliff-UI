@@ -20,9 +20,10 @@ const Home = () => {
         <div className="mt-1.6rem center jc-start gap-8px">
           <Link
             to="https://github.com/tenoxui/css"
-            className="btn bw-1px bs-solid bc-[neutral-500] rounded-full center gap-4px text-neutral-800"
+            className="btn bw-1px bs-solid bc-[neutral-500] rounded-full center text-neutral-700 fw-200"
           >
-            tenoxui/css
+            <i className="txi ti-github_square fs-14px mr-8px"></i>
+            tenoxui/<span className="text-neutral-900">css</span>
           </Link>
           <Link
             to="/component"

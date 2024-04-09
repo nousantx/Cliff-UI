@@ -8,7 +8,7 @@ const Features = () => {
       <Feature
         icon="draw"
         count={1}
-        name="Creative"
+        name="Customizable"
         desc="Explore customizable components we provide"
         className="ml-1rem"
       />
@@ -16,7 +16,7 @@ const Features = () => {
         icon="bolt"
         count={2}
         name="Fast"
-        desc="Loaded really fast!"
+        desc="Loaded really fast! 3kb gziped"
         className="mr-1rem"
       />
       <Feature
