@@ -11,7 +11,7 @@ export const Footer = () => {
         <div className="center jc-start gap-4px">
           <span className="ms-line text-primary-500 fs-30px">ssid_chart</span>
           <h1 className="fs-1.4em center">
-            Creative std<span className="text-primary-500">.</span>
+            Cliff UI<span className="text-primary-500">.</span>
           </h1>
         </div>
         <p className="text-neutral-800 fs-12px">

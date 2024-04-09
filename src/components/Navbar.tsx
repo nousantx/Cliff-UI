@@ -8,7 +8,7 @@ export const Navbar = () => {
       <header className="center gap-4px">
         <span className="ms-line text-primary-500 fs-24px">ssid_chart</span>
         <h1 className="fs-1em">
-          Creative std<span className="text-primary-500">.</span>
+          Cliff UI<span className="text-primary-500">.</span>
         </h1>
       </header>
       <div className="center gap-1rem">
