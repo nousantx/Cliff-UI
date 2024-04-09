@@ -50,6 +50,23 @@ const Components = () => {
           </header>
         </div>
       </Article>
+      <Article
+        title="Alert"
+        desc="Give user some information based state"
+        isNew
+      >
+        <div className="flex p-2rem bs-solid bw-1px bc-[neutral-500] br-8px gap-8px">
+          <span class="ms-round fs-16px text-primary-500 d-block mt-3px">
+            deployed_code
+          </span>
+          <header className="center ai-start jc-center fd-col">
+            <h3 className="fw-400">Performance Boosted</h3>
+            <p className="text ta-justify fs-14px">
+              Let's try new functionallity to boost your project!
+            </p>
+          </header>
+        </div>
+      </Article>
     </section>
   );
 };
