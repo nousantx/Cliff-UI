@@ -6,6 +6,14 @@ import Styles from "./styles";
 export default function useStyles(): void {
   useLayoutEffect(() => {
     Styles();
-    Color();
+    Color([
+      "primary",
+      "accent",
+      "info",
+      "success",
+      "warning",
+      "danger",
+      "neutral",
+    ]);
   }, []);
 }
