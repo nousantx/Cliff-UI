@@ -42,7 +42,12 @@ const Button: React.FC<Radio> = ({
     //   )}
     // </button>
     <div className={`center gap-8px ${className}`}>
-      <button className="btn center p-0" onClick={handleClick}>
+      <button
+        className="btn center p-0"
+        onClick={handleClick}
+        aria-label={text}
+        role="button"
+      >
         {isToggled ? (
           <div className="box-14px center rounded over-hidden bw-0">
             <div

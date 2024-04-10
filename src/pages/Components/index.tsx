@@ -1,18 +1,13 @@
 import { Link } from "react-router-dom";
 import Article from "../../components/Article";
 import useStyles from "../../utils/useStyles";
-import { useEffect, useLayoutEffect, useState } from "react";
+import { useLayoutEffect, useState } from "react";
 import Styles from "../../utils/styles";
-import Color from "../../utils/color";
 import styleColor from "../../utils/styleColor";
 import Button from "./components/Button";
 
 const Components = () => {
   const [isToggled, setIsToggled] = useState(false);
-
-  // useEffect(() => {
-  //   tenoxui(); // Apply styles from the CSS framework
-  // }, []);
 
   const handleClick = () => {
     setIsToggled(!isToggled);
