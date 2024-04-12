@@ -73,7 +73,7 @@ useLayoutEffect(() => {
 // curent code
 ```
 
-You can use array for property values, and it will set the value for all propties inside of the array. Code above, we defined type `size`, it will set value for both `width` and `height` at the same time, like `size-300px` it will make a square box with 300px size.
+You can use array for property values, and it will set the same value for all properties inside of the array. Code above, we defined type `size`, it will set value for both `width` and `height` at the same time, like `size-300px` it will make a square box with 300px size.
 
 After that, you can use new defined type and property directly on your element.
 
