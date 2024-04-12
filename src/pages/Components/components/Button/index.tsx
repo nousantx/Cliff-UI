@@ -5,6 +5,7 @@ import styleColor from "../../../../utils/styleColor";
 
 interface Radio {
   text?: string;
+  icon?: string;
   className?: string;
   checkColor?: string;
   checkBoxBackground?: string;
@@ -15,6 +16,7 @@ const Button: React.FC<Radio> = ({
   className,
   checkBoxBackground,
   checkColor,
+  icon,
 }) => {
   const [isToggled, setIsToggled] = useState(false);
   const handleClick = () => {
@@ -27,20 +29,6 @@ const Button: React.FC<Radio> = ({
   }, [isToggled]);
 
   return (
-    // <button
-    //   className={`btn center bs-solid bw-1px tr-prop-background tr-time-0.3s tr-timing-ease ${
-    //     isToggled
-    //       ? "bg-primary-500 text-neutral-100"
-    //       : "bg-none bc-[primary-500] text-primary-500"
-    //   }`} // Assuming Tailwind CSS class names
-    //   onClick={handleClick}
-    // >
-    //   {isToggled ? (
-    //     <span className="ms-round fs-14px">add</span>
-    //   ) : (
-    //     <span className="ms-round fs-14px">close</span>
-    //   )}
-    // </button>
     <div className={`center gap-8px ${className}`}>
       <button
         className="btn center p-0"
@@ -49,20 +37,20 @@ const Button: React.FC<Radio> = ({
         role="button"
       >
         {isToggled ? (
-          <div className="box-14px center rounded over-hidden bw-0">
+          <div className="box-1rem center rounded over-hidden bw-0">
             <div
-              className={`box-14px bg-${
+              className={`box-1rem bg-${
                 checkBoxBackground || "accent-500"
               } center text-${checkColor || "neutral-900"}`}
             >
-              <span className="ms-round fs-12px">check</span>
+              <span className="ms-round fs-14px">{icon || "check"}</span>
             </div>
           </div>
         ) : (
-          <div className="box-14px center bs-solid bw-1px bc-[neutral-700] rounded over-hidden"></div>
+          <div className="box-1rem center bs-solid bw-1px bc-[neutral-700] rounded over-hidden"></div>
         )}
       </button>
-      <p className="fs-14px fw-300">{text}</p>
+      <p className="fs-1em fw-300">{text}</p>
     </div>
   );
 };

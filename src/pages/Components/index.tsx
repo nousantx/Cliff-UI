@@ -5,6 +5,7 @@ import { useLayoutEffect, useState } from "react";
 import Styles from "../../utils/styles";
 import styleColor from "../../utils/styleColor";
 import Button from "./components/Button";
+import { TabItem, Tabs } from "./components/Tabs";
 
 const Components = () => {
   const [isToggled, setIsToggled] = useState(false);
@@ -23,11 +24,15 @@ const Components = () => {
   return (
     <>
       <section className="pt-7rem">
-        <div className="center w-full mb-5rem">
+        <Link to="/" className="mb-3rem inline-flex ai-center gap-6px">
+          <span className="ms-round fs-16px">arrow_back</span>
+          <p>Go Back</p>
+        </Link>
+        <div className="center col w-full">
           <header className="ta-center">
             <div className="center gap-8px">
               <span className="ms-round fs-2.7rem text-primary-500">
-                space_dashboard
+                widgets
               </span>
               <div className="relative">
                 <span className="text-neutral-700 fs-14px absolute none">
@@ -42,6 +47,49 @@ const Components = () => {
           </header>
         </div>
 
+        <Article title="Tabs" desc="Tabs components" isNew>
+          <Tabs>
+            <TabItem
+              title={
+                <p className="center gap-4px fw-400 fs-14px">
+                  <span className="ms-round fs-16px">terminal</span>Greet
+                </p>
+              }
+            >
+              <div className="center">
+                <p className="center gap-6px fs-14px text-neutral-800">
+                  Build faster with
+                  <span className="text-primary-500 center gap-6px fs-18px">
+                    <i className="txi ti-vantenox"></i>
+                    TenoxUI
+                  </span>
+                </p>
+              </div>
+            </TabItem>
+            <TabItem
+              title={
+                <p className="center gap-4px fw-400 fs-14px">
+                  <span className="ms-round fs-16px">barcode</span>Code
+                </p>
+              }
+            >
+              <span className="ms-round fs-3rem text-primary-500">qr_code</span>
+              <h2 className="mt-1rem">Let Features</h2>
+              <p className="text-neutral-800 ta-justify">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Aspernatur dolorum nam labore alias mollitia?
+              </p>
+            </TabItem>
+            <TabItem title={<span className="ms-round fs-16px">add</span>}>
+              <h2>Let's add new content here</h2>
+              <p className="text-neutral-800 ta-justify">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Aspernatur dolorum nam labore alias mollitia?
+              </p>
+              <button className="btn bg-primary-500 mt-1rem">More</button>
+            </TabItem>
+          </Tabs>
+        </Article>
         <Article title="Checkbox" desc="Handle checkbox" isNew>
           <div className="flex fd-col ai-start gap-8px">
             <Button text="Hello World" />
@@ -49,6 +97,7 @@ const Components = () => {
               checkBoxBackground="primary-500"
               checkColor="neutral-100"
               text="Is tenoxui cooked?"
+              icon="radio_button_checked"
             />
           </div>
         </Article>

@@ -21,7 +21,7 @@ const Article: React.FC<Article> = ({
     <article className={`mt-2rem ${className}`}>
       <header>
         {isNew ? (
-          <div className="flex ai-center gap-1rem">
+          <div className="flex ai-center gap-8px">
             <h2>{title}</h2>
             <div className="center bg-primary-500 text-neutral-100 br-6px fs-12px ph-4px pv-2px fw-500">
               New

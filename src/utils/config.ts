@@ -5,6 +5,7 @@ const config = {
     bdr: "border",
     bc: "borderColor",
     text: "color",
+    ms: "marginInlineStart",
     "back-c": "backgroundColor",
   },
   // defined class and selector
@@ -30,6 +31,7 @@ const config = {
 
     // my re-usable classNames
     ".flex": "d-flex",
+    ".inline-flex": "d-[tx_inline-flex]",
     ".flex-wrap": "d-flex fx-wrap-wrap",
     ".col, .fd-col": "fd-column",
     ".start": "flex-parent-start",

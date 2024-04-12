@@ -14,11 +14,11 @@ export const Navbar = () => {
         </header>
       </Link>
       <div className="center gap-1rem">
-        <NavLink to="/" className="nav-link">
-          Overview
-        </NavLink>
         <NavLink to="/component" className="nav-link">
           Component
+        </NavLink>
+        <NavLink to="/template" className="nav-link">
+          Template
         </NavLink>
       </div>
     </nav>

@@ -1,6 +1,7 @@
 :root {
   /* Maybe needed value */
   --tx_inline-block: inline-block;
+  --tx_inline-flex: inline-flex;
   --tx_sb: space-between;
   --tx_fx-s: flex-start;
   --tx_fx-r: flex-end;

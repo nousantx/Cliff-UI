@@ -6,6 +6,7 @@ import { Navbar } from "./components/Navbar";
 import { Footer } from "./components/Footer";
 import { NotFound } from "./pages/NotFound";
 import Components from "./pages/Components";
+import Templates from "./pages/Templates";
 
 const App: React.FC = () => {
   useStyles();
@@ -17,6 +18,7 @@ const App: React.FC = () => {
         <Route path="*" element={<NotFound />} />
         <Route path="/" element={<Home />} />
         <Route path="/component" element={<Components />} />
+        <Route path="/template" element={<Templates />} />
       </Routes>
       <Footer />
     </BrowserRouter>
