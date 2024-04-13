@@ -3,7 +3,7 @@ import { useLayoutEffect } from "react";
 import Color from "./color";
 import Styles from "./styles";
 
-export default function useStyles(): void {
+export default function useStyles(...hooks: any): void {
   useLayoutEffect(() => {
     Styles();
     Color([
@@ -15,5 +15,5 @@ export default function useStyles(): void {
       "danger",
       "neutral",
     ]);
-  }, []);
+  }, [hooks]);
 }

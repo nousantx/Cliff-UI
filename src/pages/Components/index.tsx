@@ -6,6 +6,7 @@ import Styles from "../../utils/styles";
 import styleColor from "../../utils/styleColor";
 import Button from "./components/Button";
 import { TabItem, Tabs } from "./components/Tabs";
+import { Accordion, AccordionItem } from "./components/Accordion";
 
 const Components = () => {
   const [isToggled, setIsToggled] = useState(false);
@@ -47,6 +48,21 @@ const Components = () => {
           </header>
         </div>
 
+        <Article title="Accordion" desc="Click to reveal hidden element">
+          <Accordion className="w-full flex fd-column gap-1rem">
+            <AccordionItem title="TenoxUI">
+              <span className="text-primary-500 center gap-6px fs-18px p-2rem bg-neutral-200">
+                <i className="txi ti-vantenox"></i>
+                TenoxUI
+              </span>
+            </AccordionItem>
+            <AccordionItem title="Accordion 2">
+              <div className="w-full bg-primary-900 p-1rem">
+                Content for Accordion 2
+              </div>
+            </AccordionItem>
+          </Accordion>
+        </Article>
         <Article title="Tabs" desc="Tabs components" isNew>
           <Tabs>
             <TabItem
